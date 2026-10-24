@@ -1,23 +1,34 @@
-# HH7 Cloudflare Pages Demo
+# HH7 Modern Landing Page
 
-Đây là repo mẫu cho việc triển khai website tĩnh lên Cloudflare Pages.
+Đây là phiên bản cải tiến của repo cho mục đích triển khai lên Cloudflare Pages.
+
+## Tính năng chính
+
+- Hero section hiện đại và conversion-focused
+- Các phần tính năng, demo, workflow, pricing và FAQ
+- Responsive design cho mobile/tablet/desktop
+- Theme switcher sáng/tối
+- Accordion FAQ và menu mobile
+- Tối ưu cho landing page marketing và giới thiệu thương hiệu
 
 ## Cấu trúc
 
-- `index.html` – trang chính
-- `styles.css` – giao diện
-- `script.js` – chức năng chuyển đổi theme
+- `index.html` – toàn bộ layout landing page
+- `styles.css` – giao diện hiện đại, responsive và dark mode
+- `script.js` – xử lý theme toggle, nav mobile và FAQ accordion
 
-## Triển khai trên Cloudflare Pages
+## Deploy trên Cloudflare Pages
 
-1. Đăng nhập Cloudflare Dashboard.
-2. Vào Pages → Create project.
-3. Chọn GitHub và kết nối repo `anhdq27917-lgtm/hh7`.
-4. Thiết lập:
+1. Đăng nhập Cloudflare Dashboard
+2. Vào Workers & Pages → Create application → Pages
+3. Chọn Connect to Git
+4. Chọn repo `anhdq27917-lgtm/hh7`
+5. Chọn branch `main`
+6. Thiết lập:
    - Build command: để trống
    - Output directory: `.`
-5. Deploy.
+7. Click Save and Deploy
 
 ## Lưu ý
 
-Dự án này không cần Node.js hoặc framework, nên rất phù hợp cho Cloudflare Pages trong trường hợp chỉ cần render một trang tĩnh.
+Dự án này là static site nên không cần package manager or framework, rất phù hợp với Cloudflare Pages.

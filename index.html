@@ -3,141 +3,397 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HH7 | Cloudflare Pages</title>
     <meta
       name="description"
-      content="Trang demo được triển khai trên Cloudflare Pages với HTML/CSS/JS tĩnh."
+      content="HH7 là landing page hiện đại, đẹp, thân thiện với Cloudflare Pages và sẵn sàng deploy ngay."
     />
+    <title>HH7 | Modern Cloudflare Pages</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav">
-        <div class="brand">
-          <span class="brand-mark">H</span>
-          <span>HH7</span>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="#top" aria-label="Trang chủ HH7">
+            <span class="brand-mark">H</span>
+            <span class="brand-text">HH7</span>
+          </a>
+
+          <button class="nav-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="main-nav" aria-label="Điều hướng chính">
+            <a href="#features">Tính năng</a>
+            <a href="#showcase">Demo</a>
+            <a href="#workflow">Quy trình</a>
+            <a href="#pricing">Bảng giá</a>
+            <a href="#faq">FAQ</a>
+            <button class="theme-toggle" type="button" aria-label="Chuyển chế độ sáng tối">
+              <span class="theme-icon">☀️</span>
+            </button>
+          </nav>
         </div>
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="#features">Tính năng</a>
-          <a href="#about">Giới thiệu</a>
-          <a href="#deploy">Triển khai</a>
-        </nav>
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Cloudflare Pages</p>
-            <h1>Deploy nhanh, dễ dàng, và ổn định.</h1>
-            <p class="subtitle">
-              Đây là một trang demo cho repo <strong>anhdq27917-lgtm/hh7</strong>,
-              được thiết kế để triển khai trực tiếp trên Cloudflare Pages mà không
-              cần build tool phức tạp.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#deploy">Xem cách deploy</a>
-              <a class="btn btn-secondary" href="#features">Khám phá</a>
-            </div>
-            <ul class="hero-points" aria-label="Advantages">
-              <li>Trang tĩnh, tốc độ cao</li>
-              <li>Cấu hình tối giản</li>
-              <li>Triển khai liên tục từ GitHub</li>
-            </ul>
-          </div>
+      <main id="top">
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Cloudflare Pages • Static Website</span>
+              <h1>Triển khai website nhanh hơn, đẹp hơn, và mạnh mẽ hơn.</h1>
+              <p class="lead">
+                HH7 là một nền tảng web hiện đại giúp bạn giới thiệu sản phẩm, dịch vụ,
+                startup hoặc thương hiệu với giao diện premium, hiệu năng cao và dễ triển khai.
+              </p>
 
-          <div class="hero-card" aria-label="Cloudflare Pages info card">
-            <div class="status">
-              <span class="dot"></span>
-              Live on Cloudflare Pages
-            </div>
-            <h2>HH7 Project</h2>
-            <p>Static site template</p>
-            <div class="stat-grid">
-              <div>
-                <strong>Zero</strong>
-                <span>build setup</span>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#pricing">Khám phá</a>
+                <a class="btn btn-secondary" href="#showcase">Xem demo</a>
               </div>
-              <div>
-                <strong>Fast</strong>
-                <span>global CDN</span>
+
+              <ul class="social-proof" aria-label="Đánh giá và dữ liệu">
+                <li>
+                  <strong>10k+</strong>
+                  <span>lượt truy cập</span>
+                </li>
+                <li>
+                  <strong>99.9%</strong>
+                  <span>uptime</span>
+                </li>
+                <li>
+                  <strong>3x</strong>
+                  <span>tăng tốc độ</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hero-visual" aria-label="Visual showcase">
+              <div class="dashboard-card glass-card">
+                <div class="card-header">
+                  <span class="status-pill">Live</span>
+                  <span class="mini-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+
+                <div class="stats-row">
+                  <div class="stat-box">
+                    <small>Traffic</small>
+                    <strong>24.8K</strong>
+                  </div>
+                  <div class="stat-box accent">
+                    <small>CTR</small>
+                    <strong>8.2%</strong>
+                  </div>
+                </div>
+
+                <div class="chart-box">
+                  <div class="bars" aria-hidden="true">
+                    <span style="height: 26%"></span>
+                    <span style="height: 38%"></span>
+                    <span style="height: 52%"></span>
+                    <span style="height: 80%"></span>
+                    <span style="height: 64%"></span>
+                    <span style="height: 92%"></span>
+                    <span style="height: 100%"></span>
+                  </div>
+                </div>
+
+                <div class="list-box">
+                  <div class="list-item">
+                    <span class="dot green"></span>
+                    <div>
+                      <strong>Campaign #101</strong>
+                      <small>Đang chạy tốt</small>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <span class="dot blue"></span>
+                    <div>
+                      <strong>Landing page</strong>
+                      <small>Đã tối ưu</small>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="features" class="features">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Tại sao chọn</p>
-            <h2>Cloudflare Pages cho dự án này</h2>
+        <section class="logo-strip">
+          <div class="container logo-row" aria-label="Partner list">
+            <span>Vercel</span>
+            <span>Cloudflare</span>
+            <span>Notion</span>
+            <span>GitHub</span>
+            <span>Stripe</span>
+            <span>Figma</span>
           </div>
+        </section>
 
-          <div class="feature-grid">
-            <article class="feature-card">
-              <h3>Triển khai đơn giản</h3>
-              <p>Kết nối GitHub và deploy chỉ với một vài click.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Hiệu năng tốt</h3>
-              <p>Trang tĩnh được cache ở edge network trên toàn cầu.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Phù hợp cho landing page</h3>
-              <p>Không cần framework, không cần build tool nếu chỉ cần hiển thị nội dung.</p>
-            </article>
+        <section id="features" class="section">
+          <div class="container">
+            <div class="section-head">
+              <span class="eyebrow muted">Tính năng</span>
+              <h2>Thiết kế dành cho doanh nghiệp hiện đại</h2>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature-card glass-card">
+                <div class="icon">⚡</div>
+                <h3>Tốc độ tối ưu</h3>
+                <p>Website render nhanh, nhẹ, hiệu suất cao và tương thích tuyệt vời trên mọi thiết bị.</p>
+              </article>
+
+              <article class="feature-card glass-card">
+                <div class="icon">🎯</div>
+                <h3>Conversion-first</h3>
+                <p>Thiết kế hướng đến hành động: CTA rõ ràng, thông điệp mạnh và trải nghiệm tối ưu cho khách hàng.</p>
+              </article>
+
+              <article class="feature-card glass-card">
+                <div class="icon">🛡️</div>
+                <h3>Ổn định và bảo mật</h3>
+                <p>Triển khai trên Cloudflare Pages giúp tăng tốc độ toàn cầu và giảm rủi ro bảo mật cho site tĩnh.</p>
+              </article>
+
+              <article class="feature-card glass-card">
+                <div class="icon">📈</div>
+                <h3>Analytic-friendly</h3>
+                <p>Dễ tích hợp Google Analytics, pixel, event tracking hay các tool đo lường tiếp thị.</p>
+              </article>
+
+              <article class="feature-card glass-card">
+                <div class="icon">🧩</div>
+                <h3>Tối giản nhưng linh hoạt</h3>
+                <p>Đúng kiểu Landing page: sạch, rõ ràng nhưng vẫn đủ sức mở rộng khi cần thêm tính năng.</p>
+              </article>
+
+              <article class="feature-card glass-card">
+                <div class="icon">🌍</div>
+                <h3>Global CDN</h3>
+                <p>Phân phối nội dung trên mạng lưới toàn cầu để trải nghiệm người dùng luôn mượt mà.</p>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="about" class="about">
-        <div class="container about-grid">
+        <section id="showcase" class="section alt-section">
+          <div class="container showcase-wrap">
+            <div class="section-head left">
+              <span class="eyebrow muted">Demo</span>
+              <h2>UI hiện đại, phong cách premium</h2>
+            </div>
+
+            <div class="showcase-grid">
+              <div class="device-card glass-card">
+                <div class="device-header">
+                  <span class="browser-dot red"></span>
+                  <span class="browser-dot yellow"></span>
+                  <span class="browser-dot green"></span>
+                </div>
+                <div class="device-screen">
+                  <div class="screen-header">
+                    <span>Dashboard</span>
+                    <span class="badge">Pro</span>
+                  </div>
+                  <div class="screen-chart">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="screen-metrics">
+                    <div>
+                      <strong>92%</strong>
+                      <small>ROI</small>
+                    </div>
+                    <div>
+                      <strong>4.8/5</strong>
+                      <small>Đánh giá</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase-copy">
+                <div class="mini-card glass-card">
+                  <span class="pill success">Tăng 38% chuyển đổi</span>
+                  <h3>Landing page hỗ trợ đánh giá, báo cáo & cải thiện hiệu quả</h3>
+                  <p>
+                    Từ mẫu sản phẩm, phần giới thiệu, chiến dịch marketing đến roadmap – mọi thứ đều được tổ chức rõ ràng và truyền tải tốt hơn đến người xem.
+                  </p>
+                </div>
+
+                <div class="mini-list">
+                  <div>
+                    <span>✔</span>
+                    <p>Hero section mạnh mẽ và CTA rõ ràng</p>
+                  </div>
+                  <div>
+                    <span>✔</span>
+                    <p>Giải thích rõ giá trị sản phẩm trong 5 giây đầu</p>
+                  </div>
+                  <div>
+                    <span>✔</span>
+                    <p>Quy trình triển khai đơn giản, dễ tùy biến</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="workflow" class="section">
+          <div class="container">
+            <div class="section-head center">
+              <span class="eyebrow muted">Quy trình</span>
+              <h2>Rất dễ triển khai, rất nhanh để chạy</h2>
+            </div>
+
+            <div class="step-grid">
+              <div class="step-item glass-card">
+                <span class="step-num">01</span>
+                <h3>Thêm source code</h3>
+                <p>Đẩy mã lên GitHub và định nghĩa cấu trúc trang đúng chuẩn.</p>
+              </div>
+
+              <div class="step-item glass-card">
+                <span class="step-num">02</span>
+                <h3>Kết nối Cloudflare Pages</h3>
+                <p>Liên kết repo, chọn branch main, thiết lập build output phù hợp.</p>
+              </div>
+
+              <div class="step-item glass-card">
+                <span class="step-num">03</span>
+                <h3>Deploy & theo dõi</h3>
+                <p>Website của bạn sẽ được publish trên Pages với tốc độ cực nhanh.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pricing" class="section alt-section">
+          <div class="container">
+            <div class="section-head center">
+              <span class="eyebrow muted">Bảng giá</span>
+              <h2>Phù hợp cho cá nhân, startup và doanh nghiệp</h2>
+            </div>
+
+            <div class="pricing-grid">
+              <article class="price-card glass-card">
+                <p class="plan-name">Starter</p>
+                <h3>$0</h3>
+                <ul>
+                  <li>Trang landing tĩnh</li>
+                  <li>Custom domain cơ bản</li>
+                  <li>Hỗ trợ 1 dự án</li>
+                </ul>
+                <a href="#" class="btn btn-secondary full">Bắt đầu</a>
+              </article>
+
+              <article class="price-card featured glass-card">
+                <span class="badge-top">Phổ biến</span>
+                <p class="plan-name">Growth</p>
+                <h3>$29<span>/tháng</span></h3>
+                <ul>
+                  <li>Tất cả tính năng Starter</li>
+                  <li>Custom domain nâng cao</li>
+                  <li>Analytics & conversion tools</li>
+                </ul>
+                <a href="#" class="btn btn-primary full">Chọn Growth</a>
+              </article>
+
+              <article class="price-card glass-card">
+                <p class="plan-name">Business</p>
+                <h3>$79<span>/tháng</span></h3>
+                <ul>
+                  <li>Hỗ trợ riêng</li>
+                  <li>Tùy biến toàn diện</li>
+                  <li>Quản lý dự án nhiều landing page</li>
+                </ul>
+                <a href="#" class="btn btn-secondary full">Liên hệ</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="section">
+          <div class="container faq-wrap">
+            <div class="section-head left">
+              <span class="eyebrow muted">FAQ</span>
+              <h2>Câu hỏi thường gặp</h2>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-item open">
+                <button class="faq-question" type="button">
+                  <span>Cloudflare Pages có phù hợp với website tĩnh không?</span>
+                  <span class="plus">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Có. Cloudflare Pages cực kỳ phù hợp với landing page, site tĩnh, blog, portfolio và các dự án không cần backend phức tạp.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" type="button">
+                  <span>Repo này có cần Node.js không?</span>
+                  <span class="plus">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Không. Dự án này là HTML/CSS/JS tĩnh nên bạn không cần cài đặt framework hoặc build chain.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" type="button">
+                  <span>Deploy có mất nhiều thời gian không?</span>
+                  <span class="plus">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Rất nhanh. Sau khi kết nối repo, Cloudflare sẽ build và publish site trong vài phút.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-section">
+          <div class="container cta-box glass-card">
+            <div>
+              <span class="eyebrow muted">Sẵn sàng triển khai</span>
+              <h2>Thêm tính năng, nâng cấp trải nghiệm và đi online ngay hôm nay.</h2>
+            </div>
+            <a href="#top" class="btn btn-primary">Bắt đầu ngay</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-wrap">
           <div>
-            <p class="eyebrow">Giới thiệu</p>
-            <h2>Repo này đã sẵn sàng dùng cho Cloudflare Pages</h2>
+            <a class="brand footer-brand" href="#top">
+              <span class="brand-mark">H</span>
+              <span class="brand-text">HH7</span>
+            </a>
           </div>
-          <p>
-            Dự án hiện tại là một website tĩnh cơ bản bao gồm HTML, CSS và JavaScript.
-            Điều này rất phù hợp với Cloudflare Pages vì bạn không cần chuẩn bị build
-            environment phức tạp. Chỉ cần push code lên GitHub và nhập repo trong Cloudflare.
-          </p>
+          <p>© 2026 HH7 Studio. All rights reserved.</p>
         </div>
-      </section>
-
-      <section id="deploy" class="deploy">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Triển khai</p>
-            <h2>Cách setup trên Cloudflare Pages</h2>
-          </div>
-
-          <ol class="deploy-steps">
-            <li>Vào Cloudflare Dashboard → Pages → Create project.</li>
-            <li>Chọn GitHub và kết nối repo <strong>anhdq27917-lgtm/hh7</strong>.</li>
-            <li>Để trống Build command.</li>
-            <li>Output directory để mặc định là <strong>.</strong> hoặc root folder.</li>
-            <li>Deploy và kiểm tra website.</li>
-          </ol>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 2026 HH7. Built for Cloudflare Pages.</p>
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
-          Chế độ tối
-        </button>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <script src="./script.js"></script>
   </body>
