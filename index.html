@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HH7 | Cloudflare Pages</title>
+    <meta
+      name="description"
+      content="Trang demo được triển khai trên Cloudflare Pages với HTML/CSS/JS tĩnh."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">H</span>
+          <span>HH7</span>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#features">Tính năng</a>
+          <a href="#about">Giới thiệu</a>
+          <a href="#deploy">Triển khai</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Cloudflare Pages</p>
+            <h1>Deploy nhanh, dễ dàng, và ổn định.</h1>
+            <p class="subtitle">
+              Đây là một trang demo cho repo <strong>anhdq27917-lgtm/hh7</strong>,
+              được thiết kế để triển khai trực tiếp trên Cloudflare Pages mà không
+              cần build tool phức tạp.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#deploy">Xem cách deploy</a>
+              <a class="btn btn-secondary" href="#features">Khám phá</a>
+            </div>
+            <ul class="hero-points" aria-label="Advantages">
+              <li>Trang tĩnh, tốc độ cao</li>
+              <li>Cấu hình tối giản</li>
+              <li>Triển khai liên tục từ GitHub</li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Cloudflare Pages info card">
+            <div class="status">
+              <span class="dot"></span>
+              Live on Cloudflare Pages
+            </div>
+            <h2>HH7 Project</h2>
+            <p>Static site template</p>
+            <div class="stat-grid">
+              <div>
+                <strong>Zero</strong>
+                <span>build setup</span>
+              </div>
+              <div>
+                <strong>Fast</strong>
+                <span>global CDN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Tại sao chọn</p>
+            <h2>Cloudflare Pages cho dự án này</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Triển khai đơn giản</h3>
+              <p>Kết nối GitHub và deploy chỉ với một vài click.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Hiệu năng tốt</h3>
+              <p>Trang tĩnh được cache ở edge network trên toàn cầu.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Phù hợp cho landing page</h3>
+              <p>Không cần framework, không cần build tool nếu chỉ cần hiển thị nội dung.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Giới thiệu</p>
+            <h2>Repo này đã sẵn sàng dùng cho Cloudflare Pages</h2>
+          </div>
+          <p>
+            Dự án hiện tại là một website tĩnh cơ bản bao gồm HTML, CSS và JavaScript.
+            Điều này rất phù hợp với Cloudflare Pages vì bạn không cần chuẩn bị build
+            environment phức tạp. Chỉ cần push code lên GitHub và nhập repo trong Cloudflare.
+          </p>
+        </div>
+      </section>
+
+      <section id="deploy" class="deploy">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Triển khai</p>
+            <h2>Cách setup trên Cloudflare Pages</h2>
+          </div>
+
+          <ol class="deploy-steps">
+            <li>Vào Cloudflare Dashboard → Pages → Create project.</li>
+            <li>Chọn GitHub và kết nối repo <strong>anhdq27917-lgtm/hh7</strong>.</li>
+            <li>Để trống Build command.</li>
+            <li>Output directory để mặc định là <strong>.</strong> hoặc root folder.</li>
+            <li>Deploy và kiểm tra website.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 HH7. Built for Cloudflare Pages.</p>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          Chế độ tối
+        </button>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
